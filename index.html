@@ -962,6 +962,20 @@
       .reviews-grid { gap: 0.75rem; }
     }
 
+  
+    /* ── Navbar overflow fix ── */
+    @media (max-width: 1080px) {
+      .nav-links { display: none !important; }
+      .nav-cta { display: none !important; }
+      .hamburger { display: flex !important; }
+    }
+    @media (min-width: 1081px) {
+      .hamburger { display: none !important; }
+      .mobile-menu { display: none !important; }
+      .nav-links { display: flex !important; }
+      .nav-cta { display: inline-block !important; }
+    }
+
   </style>
 </head>
 <body>
